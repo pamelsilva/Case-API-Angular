@@ -1,0 +1,48 @@
+<div class="card">
+    <!-- Cabeçalho -->
+    <div class="card-header">
+        <div class="d-flex justify-content-between">
+            <div><strong>Lancamentos</strong></div>
+            <div class="d-flex">
+                <button class="btn btn-primary mr-7" [routerLink]="['/lancamentos/cadastrar']">
+                  <i class="fa fa-plus"></i> Novo Lançamento
+              </button>
+                <button class="btn btn-secondary" [routerLink]="['/categorias']">
+                  <i class="fa-solid fa-list"></i> Categorias
+              </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela -->
+    <div class="table-responsive">
+        <table class="table mb-0">
+            <thead>
+                <tr>
+                    <!-- <th>Id</th>
+                    <th>IdCategoria</th> -->
+                    <th>Descrição</th>
+                    <th>Data</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let lancamento of lancamentos">
+                    <!--<td>{{lancamento.id}}</td>
+                    <td>{{lancamento.idCategoria}}</td>-->
+                    <td>{{lancamento.description}}</td>
+                    <td>{{lancamento.date}}</td>
+                    <td>{{lancamento.value}}</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" [routerLink]="['/lancamentos', lancamento.id, 'editar']">
+                          <i class="fa fa-edit"></i>
+                      </button>
+                        <button class="btn btn-outline-danger btn-sm" (click)="deletarLancamento(lancamento.id, lancamento.idCategoria, lancamento.description, lancamento.date, lancamento.value)">
+                          <i class="fa-solid fa-trash-can"></i>
+                      </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

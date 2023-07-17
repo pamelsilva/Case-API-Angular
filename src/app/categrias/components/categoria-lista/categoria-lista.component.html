@@ -1,0 +1,43 @@
+<div class="card">
+    <!-- Cabeçalho -->
+    <div class="card-header">
+        <div class="d-flex justify-content-between">
+            <div><strong>Categorias</strong></div>
+            <div class="d-flex">
+                <button class="btn btn-primary mr-7" [routerLink]="['/categorias/cadastrar']">
+                <i class="fa fa-plus"></i> Nova categoria
+            </button>
+                <button class="btn btn-secondary" [routerLink]="['/lancamentos']">
+                <i class="fa-solid fa-list"></i> Lançamentos
+            </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela -->
+    <div class="table-responsive">
+        <table class="table mb-0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let categoria of categorias">
+                    <td>{{ categoria.name }}</td>
+                    <td>
+                        <button class="btn btn-outline-primary btn-sm md-7" [routerLink]="['/categorias', categoria.id, 'editar']">
+                          <i class="fa-solid fa-file-pen"></i>
+                      </button>
+
+                        <button class="btn btn-outline-danger btn-sm" (click)="deletarCategorias(categoria.id, categoria.name)">
+                          <i class="fa-solid fa-trash-can"></i>
+                      </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
