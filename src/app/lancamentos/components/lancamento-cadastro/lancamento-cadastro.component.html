@@ -1,0 +1,56 @@
+<div class="card">
+    <!--Cabeçalho -->
+    <div class="card-header" [textContent]="pageTitle"></div>
+    <div class="card-body">
+        <!--Formulario -->
+        <form novalidate (ngSubmit)="salvar()" [formGroup]="lancamentoForm">
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="idCategoria">idCategoria</label>
+                <div class="col-md-7">
+                    <select class="form-select" type="idCategoria" id="idCategoria" name="idCategoria" formControlName="idCategoria" aria-label="Default select exameple">
+                <option selected> Open this select menu</option>
+                <option *ngFor="let item of categoriasList" [value]="item.id">{{item.name}}</option>
+                </select>
+                    <br>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="description">Descrição</label>
+                <div class="col-md-7">
+                    <input class="form-control" type="text" id="description" name="description" placeholder="Informe a descrição" formControlName="description">
+                    <br>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="date">Data</label>
+                <div class="col-md-7">
+                    <input class="form-control" type="date" id="date" name="date" formControlName="date">
+                    <br>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="value">Valor</label>
+                <div class="col-md-7">
+                    <input class="form-control" type="number" id="value" name="value" placeholder="Informe o valor" formControlName="value">
+                    <br>
+                </div>
+            </div>
+
+            <!--Ações-->
+            <div class="form-group row mb-2">
+                <div class="offset-md-2 col-md-6">
+                    <button class="btn btn-primary mr-2" type="submit" [title]="lancamentoForm.valid ? 'Salvar' : 'Desabilitado até que os dados estejam válidos'" [disabled]="!lancamentoForm.valid">Salvar</button>
+                    <button class="btn btn-outline-secondary mr-2" type="button" title="Cancelar" [routerLink]="['/lancamentos']">Cancelar</button>
+                    <button class="btn btn-outline-danger" *ngIf="pageTitle != 'Cadastrar lancamento'" type="button" title="Deletar esta categoria" (click)="deletarLancamento()">Excluir</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Alertas /erros -->
+<div class="alert alert-danger" *ngIf="errorMessage">
+    {{ errorMessage }}
+</div>
