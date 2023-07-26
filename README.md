@@ -48,3 +48,18 @@ node index.js
 ```
 Aplicação no ar!
 ```
+-----------------------------------------------------------------------------------------------------------
+
+8) Para rodar o frontend da aplicação:
+
+```bash
+cd it-frontend-case
+```
+
+```bash
+ng serve
+```
+9) Aguarde a mensagem de compilação, conforme a imagem abaixo:
+10) Veja também a porta de execução da aplicação
+
+![image](https://github.com/pamelsilva/Case-API-Angular/assets/69605954/50c44a0b-5002-4f13-bfe3-66b4774a01b1)
