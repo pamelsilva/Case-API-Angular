@@ -8,7 +8,7 @@ Essa aplicação é feita com as seguintes bibliotecas: Boostrap
 ## Arquitetura
 
 <p align="center">
-  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/53ac7574-ea52-405d-83ec-e63015c3b34b" alt="Minha imagem" width="700px" />
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/53ac7574-ea52-405d-83ec-e63015c3b34b" alt="Minha imagem" width="850px" />
 </p>
 
 
@@ -68,10 +68,52 @@ ng serve
 
 
 -----------------------------------------------------------------------------------------------------------
+## Telas da Aplicação 
+
+Listagem de Categorias: (/categorias)
+
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/1ac1d41f-944c-43fb-b4ea-43322d73cffb" alt="Minha imagem" width="1000px" />
+</p>
+
+Exclusão de Categorias: (/categorias/id/deletar)
+
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/ff162611-1ab1-423d-b673-b8f5d4b2e891" alt="Minha imagem" width="300px" />
+</p>
+
+Edição de Categorias (categorias/id/editar)
+
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/9fa92907-aad4-46e2-8beb-02e2a14fb4dc" alt="Minha imagem" width="1000px" />
+</p>
+
+
+Listagem de Lançamentos: (/lancamentos)
+
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/c3d41a3c-20e2-4747-87c4-9c663ffb3c20" alt="Minha imagem" width="1000px" />
+</p>
+
+Exclusão de Lançamentos: (/lancamentos/id/deletar)
+
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/31a13537-01ad-442f-b8d1-e14ca3203933" alt="Minha imagem" width="300px" />
+</p>
+
+Edição de Lançamentos (lancamentos/id/editar)
+
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/77afff26-2625-48d1-8208-ec6e313314bd" alt="Minha imagem" width="1000px" />
+</p>
+
+
+
+-----------------------------------------------------------------------------------------------------------
 ## Testes de Qualidade e de Aplicação
 
 <p align="center">
-  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/744913dd-bdab-4743-81e7-e287bcf8fece" alt="Minha imagem" width="100px" />
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/744913dd-bdab-4743-81e7-e287bcf8fece" alt="Minha imagem" width="150px" />
 </p>
 
 
@@ -94,7 +136,7 @@ ng serve
 
 
 <p align="center">
-  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/272b1bee-41b9-400f-b008-57c721694997" alt="Minha imagem" width="100px" />
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/272b1bee-41b9-400f-b008-57c721694997" alt="Minha imagem" width="150px" />
 </p>
 
 
