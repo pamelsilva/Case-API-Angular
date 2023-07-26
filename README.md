@@ -7,6 +7,9 @@ Essa aplicação é feita com as seguintes bibliotecas: Boostrap
 
 ## Arquitetura
 
+![arquitetura](https://github.com/pamelsilva/Case-API-Angular/assets/69605954/53ac7574-ea52-405d-83ec-e63015c3b34b)
+
+
 <h1 align="center">
    
 </h1>
