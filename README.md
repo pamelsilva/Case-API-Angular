@@ -7,7 +7,9 @@ Essa aplicação é feita com as seguintes bibliotecas: Boostrap
 
 ## Arquitetura
 
-![arquitetura](https://github.com/pamelsilva/Case-API-Angular/assets/69605954/53ac7574-ea52-405d-83ec-e63015c3b34b)
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/53ac7574-ea52-405d-83ec-e63015c3b34b" alt="Minha imagem" width="700px" />
+</p>
 
 
 <h1 align="center">
@@ -66,8 +68,13 @@ ng serve
 
 
 -----------------------------------------------------------------------------------------------------------
+## Testes de Qualidade e de Aplicação
 
-Testes de Qualidade e de Aplicação
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/744913dd-bdab-4743-81e7-e287bcf8fece" alt="Minha imagem" width="100px" />
+</p>
+
+
 
 1. Testes Unitários: Os testes unitários verificam se cada unidade individual do seu código (como funções, classes ou componentes) funciona conforme o esperado. Para testar o código do Angular, você pode usar estruturas como Jasmine e Karma. Para testar o código Node.js, você pode utilizar o Jest, Mocha ou outras bibliotecas de teste. Esses testes são rápidos e ajudam a identificar problemas nas partes mais básicas do código.
 
@@ -79,3 +86,56 @@ Testes de Qualidade e de Aplicação
 4. Testes de Performance: Os testes de desempenho avaliam o desempenho e a escalabilidade do aplicativo sob diferentes condições de carga. Você pode usar ferramentas como o Apache JMeter para simular usuários e verificar como o aplicativo responde a diferentes níveis de tráfego. Esses testes garantem que o aplicativo funcione sem problemas em condições de uso reais.
 
 5. Testes de Resiliência: Os testes de resiliência verificam como o aplicativo se comporta em situações de falha. Você pode usar ferramentas como o Chaos Monkey para injetar falhas em componentes específicos do sistema e verificar se a aplicação consegue se recuperar adequadamente. Esses testes são especialmente importantes em ambientes distribuídos e em nuvem.
+
+
+
+-----------------------------------------------------------------------------------------------------------
+## Engenharia de Software e DevOps
+
+
+<p align="center">
+  <img src="https://github.com/pamelsilva/Case-API-Angular/assets/69605954/272b1bee-41b9-400f-b008-57c721694997" alt="Minha imagem" width="100px" />
+</p>
+
+
+
+Para aplicar escalabilidade, resiliência, alta disponibilidade, observabilidade com monitoração, segurança, acessibilidade e esteira CI/CD (Continuous Integration/Continuous Deployment) em uma aplicação Node.js com Angular, você pode seguir algumas práticas recomendadas e utilizar ferramentas apropriadas. Abaixo estão algumas sugestões para cada área:
+
+
+1. Escalabilidade:
+
+Utilize balanceadores de carga para distribuir o tráfego entre múltiplas instâncias do servidor Node.js.
+Adote a arquitetura de microsserviços para que diferentes partes da aplicação possam ser escaladas independentemente.
+Utilize serviços de nuvem que ofereçam escalabilidade automática, como AWS Elastic Beanstalk.
+
+2. Resiliência e Alta Disponibilidade:
+
+ Implemente tratamento de falhas em diferentes camadas da aplicação para garantir que erros não causem uma parada completa do sistema.
+Utilize clusters ou contêineres para permitir que a aplicação seja executada em várias instâncias.
+Configure bancos de dados e sistemas de armazenamento em alta disponibilidade para garantir que os dados estejam sempre acessíveis.
+
+3. Observabilidade com Monitoração e Logs:
+
+Utilize ferramentas de monitoração como o Prometheus e Grafana para acompanhar a saúde da aplicação e métricas de desempenho.
+Registre logs detalhados para identificar e solucionar problemas de forma mais eficiente.
+Utilize serviços de rastreamento de transações para entender o fluxo de uma requisição pela aplicação, como por ex: Appdynamics.
+
+4. Segurança:
+
+Mantenha todas as dependências do projeto atualizadas para evitar vulnerabilidades conhecidas.
+Utilize autenticação e autorização robustas para proteger os endpoints da API.
+Implemente práticas de segurança no código, como validação de entrada, para prevenir ataques comuns, como injeção de SQL ou ataques XSS (Cross-Site Scripting).
+
+5. Acessibilidade:
+
+Siga as diretrizes de acessibilidade do WCAG (Web Content Accessibility Guidelines) para garantir que sua aplicação seja acessível para pessoas com deficiência.
+Faça uso de ferramentas de verificação de acessibilidade para identificar e corrigir problemas de acessibilidade em seu aplicativo.
+
+6. Esteira CI/CD (Continuous Integration/Continuous Deployment):
+
+Configure um sistema de integração contínua para automatizar os testes e builds de sua aplicação, como Jenkins, CircleCI ou GitLab CI/CD.
+Automatize a implantação da aplicação em ambientes de desenvolvimento, teste e produção, usando ferramentas como Kubernetes, Docker, ou ferramentas de infraestrutura em nuvem como AWS CloudFormation.
+
+
+
+
